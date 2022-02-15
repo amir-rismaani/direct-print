@@ -1,2 +1,2 @@
-# direct-print
+# Direct Print
 Direct Printing allows print jobs to be sent directly from a user's computer to a printer.
