@@ -10,7 +10,7 @@
         "address": "تهران، پل رومی، خیابان بهار، پلاک 98، واحد 3"
     },
     "order": {
-        "name": "9984208370008",
+        "code": "9984208370008",
         "date": "1400/05/03",
         "time": "09:22",
         "lines": [
@@ -45,12 +45,12 @@
                 "total": 160000
             }
         ],
-        "total_amount": 3680000,
-        "total_tax": 40000,
-        "total_discount": 20000,
+        "totalAmount": 3680000,
+        "totalTax": 40000,
+        "totalDiscount": 20000,
         "gift": 0,
-        "final_amount": 3700000,
-        "paid_amount": 1400000,
-        "reminder_amount": 2300000
+        "finalAmount": 3700000,
+        "paidAmount": 1400000,
+        "reminderAmount": 2300000
     }
 }
