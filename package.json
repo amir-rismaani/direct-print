@@ -1,0 +1,19 @@
+{
+  "name": "direct-print",
+  "version": "1.0.0",
+  "description": "Direct Printing allows print jobs to be sent directly from a user's computer to a printer.",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amir-rismaani/direct-print.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amir-rismaani/direct-print/issues"
+  },
+  "homepage": "https://github.com/amir-rismaani/direct-print#readme"
+}
