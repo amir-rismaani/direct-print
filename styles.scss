@@ -1,3 +1,111 @@
+
+@font-face {
+    font-family: 'iransans';
+    src: url(./assets/fonts/IRANSansWeb.woff) format('woff');
+    src: url(./assets/fonts/IRANSansWeb.woff2) format('woff2');
+}
+
+$border-color: #000;
+$border-visual: solid $border-color;
+$border-value: 1px $border-visual;
+$border-double-value: 2px $border-visual;
+
 #invoice{
-    background: #000;
+    font-family: iransans;
+    font-size: 10px;
+    max-width: 300px;
+    border: 3px solid $border-color;
+    border-radius: 15px;
+    margin: auto;
+
+    /* General
+    ==============*/
+    table{
+        border-spacing: 0
+    }
+
+    .border{
+        &-top{
+            border-top: $border-value;
+            &--none{
+                border-top: none !important;
+            }
+            &--double{
+                border-top: $border-double-value;
+            }
+        }
+        &-bottom{
+            border-bottom: $border-value;
+            &--none{
+                border-bottom: none !important;
+            }
+            &--double{
+                border-bottom: $border-double-value !important;
+            }
+        }
+
+        &-right{
+            border-right: $border-value;
+            &--none{
+                border-right: none !important;
+            }
+            &--double{
+                border-right: $border-double-value !important;
+            }
+        }
+        &-left{
+            border-left: $border-value;
+            &--none{
+                border-left: none !important;
+            }
+            &--double{
+                border-left: $border-double-value !important;
+            }
+        }
+    }
+
+    /* Typography
+    ==============*/
+    .title{
+        line-height: 15px;
+
+        &--lg{
+            font-size: 14px;
+        }
+
+        &--md{
+            font-size: 14px;
+        }
+    }
+
+
+    .bold{
+        font-weight: 700;
+    }
+
+    /* Header Table
+    ================*/
+    #header{
+        margin-top: 10px;
+    }
+
+    /* Content Table
+    ================*/
+    #content{
+        th, td{
+            border-right: $border-value;
+            border-bottom: $border-value;
+            text-align: center;
+        }
+    }
+
+    /* Footer Table
+    ================*/
+    #footer{
+        td{
+            border-right: $border-value;
+            border-bottom: $border-value;
+        }
+    }
+
 }
