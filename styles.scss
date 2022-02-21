@@ -162,7 +162,6 @@ $border-double-value: 2px $border-visual;
     img{
         &.qr-code{
             width: 40%;
-            height: fit-content;
         }
         &.barcode{
             width: 100%;
@@ -245,4 +244,13 @@ $border-double-value: 2px $border-visual;
         }
     }
 
+}
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        -moz-print-color-adjust: exact;
+        -ms-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
 }

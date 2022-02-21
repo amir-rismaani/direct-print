@@ -109,8 +109,8 @@ export default class InvoiceOrder {
         this.html += `
             <table id = "footer" width="100%">
                 <colgroup>
-                    <col span="1" style="width: 35.5%;">
-                    <col span="1" style="width: 64.5%;">
+                    <col span="1" style="width: 35%;">
+                    <col span="1" style="width: 65%;">
                 </colgroup>
 
                 <tbody>
@@ -156,8 +156,8 @@ export default class InvoiceOrder {
     }
 
     print() {
-        this.initialLayout()
-        window.print()
+        this.initialLayout();
+        window.print();
     }
 }
 
