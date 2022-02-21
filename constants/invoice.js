@@ -5,7 +5,7 @@ export default {
         cashierName: "نام صندوقدار:",
         customer: {
             name: "نام گیرنده:",
-            address: "آدرس"
+            address: "آدرس:"
         },
         order: {
             code: "کد سفارش:",

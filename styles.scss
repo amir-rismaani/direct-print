@@ -24,43 +24,148 @@ $border-double-value: 2px $border-visual;
         border-spacing: 0
     }
 
+    .highlight{
+        &-black{
+            background: $border-color;
+            color: white;
+        }
+    }
+
     .border{
         &-top{
             border-top: $border-value;
-            &--none{
+            &-none{
                 border-top: none !important;
             }
-            &--double{
+            &-double{
                 border-top: $border-double-value;
             }
         }
         &-bottom{
             border-bottom: $border-value;
-            &--none{
+            &-none{
                 border-bottom: none !important;
             }
-            &--double{
+            &-double{
                 border-bottom: $border-double-value !important;
             }
         }
 
         &-right{
             border-right: $border-value;
-            &--none{
+            &-none{
                 border-right: none !important;
             }
-            &--double{
+            &-double{
                 border-right: $border-double-value !important;
             }
         }
         &-left{
             border-left: $border-value;
-            &--none{
+            &-none{
                 border-left: none !important;
             }
-            &--double{
+            &-double{
                 border-left: $border-double-value !important;
             }
+        }
+    }
+
+    .d{
+        &-flex{
+            display: flex;
+
+            &-column{
+                flex-direction: column;
+            }
+        }
+
+        &-block{
+            display: block;
+        }
+    }
+
+    .padding{
+        @mixin padding($top: 0px, $right: 0px, $bottom: 0px, $left: 0px) {
+            padding-top: $top !important;
+            padding-right: $right !important;
+            padding-bottom: $bottom !important;
+            padding-left: $left !important;
+        }
+
+        &-top{
+            &-2{@include padding($top: 2px);}
+            &-3{@include padding($top: 3px);}
+            &-4{@include padding($top: 4px);}
+            &-5{@include padding($top: 5px);}
+        }
+
+        &-bottom{
+            &-2{@include padding($bottom: 2px);}
+            &-3{@include padding($bottom: 3px);}
+            &-4{@include padding($bottom: 4px);}
+            &-5{@include padding($bottom: 5px);}
+        }
+        &-right{
+            &-2{@include padding($right: 2px);}
+            &-3{@include padding($right: 3px);}
+            &-4{@include padding($right: 4px);}
+            &-5{@include padding($right: 5px);}
+        }
+
+        &-left{
+            &-2{@include padding($left: 2px);}
+            &-3{@include padding($left: 3px);}
+            &-4{@include padding($left: 4px);}
+            &-5{@include padding($left: 5px);}
+            &-12{@include padding($left: 12px);}
+        }
+    }
+
+    .margin{
+        @mixin margin($top: 0px, $right: 0px, $bottom: 0px, $left: 0px) {
+            margin-top: $top !important;
+            margin-right: $right !important;
+            margin-bottom: $bottom !important;
+            margin-left: $left !important;
+        }
+
+        &-top{
+            &-2{@include margin($top: 2px);}
+            &-3{@include margin($top: 3px);}
+            &-4{@include margin($top: 4px);}
+            &-5{@include margin($top: 5px);}
+        }
+
+        &-bottom{
+            &-2{@include margin($bottom: 2px);}
+            &-3{@include margin($bottom: 3px);}
+            &-4{@include margin($bottom: 4px);}
+            &-5{@include margin($bottom: 5px);}
+        }
+        &-right{
+            &-2{@include margin($right: 2px);}
+            &-3{@include margin($right: 3px);}
+            &-4{@include margin($right: 4px);}
+            &-5{@include margin($right: 5px);}
+        }
+
+        &-left{
+            &-2{@include margin($left: 2px);}
+            &-3{@include margin($left: 3px);}
+            &-4{@include margin($left: 4px);}
+            &-5{@include margin($left: 5px);}
+            &-12{@include margin($left: 12px);}
+        }
+    }
+
+    img{
+        &.qr-code{
+            width: 40%;
+            height: fit-content;
+        }
+        &.barcode{
+            width: 100%;
         }
     }
 
@@ -78,9 +183,41 @@ $border-double-value: 2px $border-visual;
         }
     }
 
+    .text{
+        &-align{
+            &-left{
+                text-align: left !important;
+            }
+            &-right{
+                text-align: right !important;
+            }
+            &-center{
+                text-align: center !important;
+            }
+            &-justify{
+                text-align: justify !important;
+            }
+        }
 
-    .bold{
-        font-weight: 700;
+        &-bold{
+            font-weight: 700;
+        }
+
+        &-size{
+            &-lg{
+                font-size: 14px;
+                line-height: 0;
+            }
+            &-md {
+                font-size: 10px;
+            }
+            &-xs{
+                font-size: 7px;
+            }
+            &-sm{
+                font-size: 8px;
+            }
+        }
     }
 
     /* Header Table
